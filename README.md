@@ -1,5 +1,5 @@
 # jekyll-bootstrap-starter
-Demos and front-end assets for Thrive projects.
+A minimal, clean starting point using Jeykll and Bootstrap
 
 ## Local development
 * Install:
