@@ -2,14 +2,14 @@
 # Site settings
 title: 'Jekyll Boostrap Starter'
 email: ackernaut@gmail.com
-description: 'Jekyll Boostrap Starter'
+description: 'A minimal, clean starting point using Jeykll and Bootstrap'
 baseurl:          /jekyll-bootstrap-starter
 url:              http://ackernaut.github.io
 name:             'Jekyll Boostrap Starter'
 permalink:        pretty
 twitter_username: ackernaut
 github_username:  ackernaut
-port: 4050
+port: 4040
 
 # Build settings
 markdown: kramdown
