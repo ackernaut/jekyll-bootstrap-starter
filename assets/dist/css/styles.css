@@ -6554,41 +6554,6 @@ button.close {
   }
 }
 
-html {
-  font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin: 0 0 1em;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-a {
-  color: #00f;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #0000b3;
-  text-decoration: none;
-}
-
-address {
-  margin: 0;
-}
-
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
