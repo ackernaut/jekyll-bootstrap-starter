@@ -1,0 +1,146 @@
+
+// _base.scss
+// Note: Remove this if using Bootstrap, or save choice definitions to _bootstrap-overrides.scss
+// scss-lint:disable ImportantRule, VendorPrefix
+
+// Box sizing
+// ----------
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Reset some basic elements
+// -------------------------
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+// Base typography
+// ---------------
+
+body {
+  color: $ui-text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $base-line-height;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Set 'margin-bottom' to maintain vertical rhythm
+// -----------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0 0 1em;
+}
+
+// Images
+// ------
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// Lists
+// -----
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+// --------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+// Links
+// -----
+
+a {
+  color: $ui-link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($ui-link-color, 15%);
+  }
+}
+
+// Address
+// -------
+
+address {
+  font-style: normal;
+}
+
+// Clearfix utility class
+// ----------------------
+
+.clearfix {
+  @include clearfix;
+}
+
+// Only display content to screen readers
+// --------------------------------------
+// See: http://a11yproject.com/posts/how-to-hide-content/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Hide from screenreaders and browsers
+// ------------------------------------
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "jekyll-bootstrap-starter",
+  "version": "0.0.0",
+  "description": "A clean starter for Jekyll using Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ackernaut/jekyll-bootstrap-starter.git"
+  },
+  "keywords": [
+    "ui",
+    "demo",
+    "static"
+  ],
+  "author": "Terry Acker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ackernaut/jekyll-bootstrap-starter/issues"
+  },
+  "homepage": "https://github.com/ackernaut/jekyll-bootstrap-starter#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "del": "^2.0.2",
+    "font-awesome": "^4.4.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-scsslint": "0.0.5",
+    "gulp-uglify": "^1.4.1",
+    "jquery": "^2.1.4"
+  }
+}
