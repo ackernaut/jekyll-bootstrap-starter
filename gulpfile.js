@@ -1,6 +1,6 @@
 
 // Require
-// -------
+// --------
 
 var del          = require('del'),
     gulp         = require('gulp'),
@@ -15,7 +15,7 @@ var del          = require('del'),
     uglify       = require('gulp-uglify');
 
 // Paths
-// -----
+// ------
 
 var css     = 'assets/dist/css',
     js      = 'assets/dist/js',
@@ -30,7 +30,7 @@ var css     = 'assets/dist/css',
     fonts   = [nodeDir + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff}'];
 
 // Clean
-// -----
+// ------
 
 gulp.task('clean', function (cb) {
   del([
@@ -40,15 +40,15 @@ gulp.task('clean', function (cb) {
 });
 
 // Copy HTML files
-// ---------------
+// ----------------
 
 gulp.task('html', function() {
-    gulp.src('./_site/index.html')
+    gulp.src('./_site/**/*.html')
     .pipe(gulp.dest('./assets/dist/html'));
 });
 
 // Copy font files
-// ---------------
+// ----------------
 
 gulp.task('fonts', function() {
     gulp.src(fonts)
@@ -56,7 +56,7 @@ gulp.task('fonts', function() {
 });
 
 // Scripts
-// -------
+// --------
 
 gulp.task('scripts', function() {
   return gulp.src(scripts)
@@ -79,7 +79,7 @@ gulp.task('jshint', function() {
 });
 
 // Sass lint
-// ---------
+// ----------
 
 gulp.task('scsslint', function() {
   return gulp.src(styles)
@@ -88,7 +88,7 @@ gulp.task('scsslint', function() {
 });
 
 // Styles
-// ------
+// -------
 
 gulp.task('styles', function() {
   return gulp.src(styles)
@@ -109,7 +109,7 @@ gulp.task('styles', function() {
 });
 
 // Watch
-// -----
+// ------
 
 gulp.task('watch', function() {
   gulp.watch(scripts, ['scripts']);
@@ -117,6 +117,6 @@ gulp.task('watch', function() {
 });
 
 // Default
-// -------
+// --------
 
 gulp.task('default', ['clean', 'scripts', 'styles']);

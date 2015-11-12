@@ -5,7 +5,7 @@
 @charset 'utf-8';
 
 // Variables and mixins
-// --------------------
+// ---------------------
 
 @import
   'variables',
@@ -16,19 +16,19 @@
 ;
 
 // Bootstrap
-// ---------
+// ----------
 // Note: See custom SCSS '_variables' for $[var] overrides.
 
 @import 'bootstrap-import';
 // @import 'bootstrap-overrides';
 
 // Font Awesome
-// ------------
+// -------------
 
 @import 'font-awesome';
 
 // Patterns
-// --------
+// ---------
 
 // @import
 //   'patterns/name',
@@ -40,19 +40,19 @@
 // ;
 
 // Components
-// ----------
+// -----------
 
 // @import
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name'
+//   'components/name',
+//   'components/name',
+//   'components/name',
+//   'components/name',
+//   'components/name',
+//   'components/name'
 // ;
 
 // Sections
-// --------
+// ---------
 
 // @import
 //   'sections/name',
@@ -64,13 +64,13 @@
 // ;
 
 // Views
-// -----
+// ------
 
 // @import
-//   'view/name',
-//   'view/name',
-//   'view/name',
-//   'view/name',
-//   'view/name',
-//   'view/name'
+//   'views/name',
+//   'views/name',
+//   'views/name',
+//   'views/name',
+//   'views/name',
+//   'views/name'
 // ;

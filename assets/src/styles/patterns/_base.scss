@@ -4,7 +4,7 @@
 // scss-lint:disable ImportantRule, VendorPrefix
 
 // Box sizing
-// ----------
+// -----------
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@
 }
 
 // Reset some basic elements
-// -------------------------
+// --------------------------
 
 body,
 h1,
@@ -33,7 +33,7 @@ ul {
 }
 
 // Base typography
-// ---------------
+// ----------------
 
 body {
   color: $ui-text-color;
@@ -45,7 +45,7 @@ body {
 }
 
 // Set 'margin-bottom' to maintain vertical rhythm
-// -----------------------------------------------
+// ------------------------------------------------
 
 h1,
 h2,
@@ -60,7 +60,7 @@ ol {
 }
 
 // Images
-// ------
+// -------
 
 img {
   display: block;
@@ -68,7 +68,7 @@ img {
 }
 
 // Lists
-// -----
+// ------
 
 ul,
 ol {
@@ -83,7 +83,7 @@ li {
 }
 
 // Headings
-// --------
+// ---------
 
 h1,
 h2,
@@ -95,7 +95,7 @@ h6 {
 }
 
 // Links
-// -----
+// ------
 
 a {
   color: $ui-link-color;
@@ -108,21 +108,21 @@ a {
 }
 
 // Address
-// -------
+// --------
 
 address {
   font-style: normal;
 }
 
 // Clearfix utility class
-// ----------------------
+// -----------------------
 
 .clearfix {
   @include clearfix;
 }
 
 // Only display content to screen readers
-// --------------------------------------
+// ---------------------------------------
 // See: http://a11yproject.com/posts/how-to-hide-content/
 
 .sr-only {
@@ -137,7 +137,7 @@ address {
 }
 
 // Hide from screenreaders and browsers
-// ------------------------------------
+// -------------------------------------
 // Credit: HTML5 Boilerplate
 
 .hidden {
