@@ -27,7 +27,7 @@ var css     = 'assets/dist/css',
               'assets/src/scripts/**/*.js'
             ],
     styles  = 'assets/src/styles/**/*.scss',
-    fonts   = [nodeDir + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff}'];
+    fonts   = [nodeDir + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2}'];
 
 // Clean
 // ------
