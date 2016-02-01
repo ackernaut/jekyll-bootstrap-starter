@@ -2,7 +2,9 @@
 // Require
 // --------
 
-var del          = require('del'),
+var browserSync  = require('browser-sync'),
+    cp           = require('child_process'),
+    del          = require('del'),
     gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat       = require('gulp-concat'),
@@ -28,6 +30,37 @@ var css     = 'assets/dist/css',
             ],
     styles  = 'assets/src/styles/**/*.scss',
     fonts   = [nodeDir + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2}'];
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+// Build the Jekyll Site
+// ----------------------
+
+gulp.task('jekyll-build', function (done) {
+  browserSync.notify(messages.jekyllBuild);
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=./_config.yml,./_dev/_config.yml'], { stdio: 'inherit' })
+    .on('close', done);
+});
+
+// Rebuild Jekyll, run page reload
+// --------------------------------
+
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+  browserSync.reload();
+});
+
+// Wait for jekyll-build, then launch the Server
+// ----------------------------------------------
+
+gulp.task('browser-sync', ['scripts', 'styles', 'jekyll-build'], function () {
+  browserSync({
+    server: {
+      baseDir: '_site'
+    }
+  });
+});
 
 // Clean
 // ------
@@ -55,6 +88,11 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./assets/dist/fonts'));
 });
 
+// Default
+// --------
+
+gulp.task('default', ['browser-sync', 'watch']);
+
 // Scripts
 // --------
 
@@ -66,9 +104,12 @@ gulp.task('scripts', function() {
       newLine: ';'
     }))
     .pipe(gulp.dest(js))
+    .pipe(gulp.dest('_site/' + js))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest(js))
+    .pipe(gulp.dest('_site/' + js))
+    .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
@@ -98,13 +139,17 @@ gulp.task('styles', function() {
         'node_modules/bootstrap-sass/assets/stylesheets',
         'node_modules/font-awesome/scss'
       ],
-      outputStyle: 'expanded'
+      outputStyle: 'expanded',
+      onError: browserSync.notify
     }))
     .pipe(autoprefixer())
     .pipe(gulp.dest(css))
+    .pipe(gulp.dest('_site/' + css))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
     .pipe(gulp.dest(css))
+    .pipe(gulp.dest('_site/' + css))
+    .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -114,9 +159,5 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   gulp.watch(scripts, ['scripts']);
   gulp.watch(styles, ['styles']);
+  gulp.watch(['**/*.html', '_includes/**/*.html', '_layouts/**/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
-
-// Default
-// --------
-
-gulp.task('default', ['clean', 'scripts', 'styles']);
