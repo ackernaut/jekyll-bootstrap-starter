@@ -11,3 +11,7 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 ## [0.1.0] - 2016-02-01
 ### Added
 - Added Browsersync
+
+## [0.1.1] - 2016-02-24
+### Changed
+- Updated gulpfile
