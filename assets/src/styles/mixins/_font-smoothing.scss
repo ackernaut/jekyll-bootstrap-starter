@@ -1,0 +1,14 @@
+
+// File:      _font-smoothing.scss
+// Purpose:   Helper for font rendering
+// Borrowed:  http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  } @else {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}

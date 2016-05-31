@@ -15,3 +15,7 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 ## [0.1.1] - 2016-02-24
 ### Changed
 - Updated gulpfile
+
+## [0.2.0] - 2016-05-31
+### Changed
+- Updated packages, mixins, etc.

@@ -1,9 +1,5 @@
 exclude:
-  - '_base.scss'
-  - '_bootstrap-import.scss'
-  - '_clearfix.scss'
-  - '_modals.scss'
-  - '_syntax-highlighting.scss'
+  - 'assets/src/styles/_bootstrap-import.scss'
 
 linters:
   ColorVariable:

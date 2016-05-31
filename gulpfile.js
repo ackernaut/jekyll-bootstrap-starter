@@ -13,7 +13,7 @@ var browserSync  = require('browser-sync'),
     notify       = require('gulp-notify'),
     rename       = require('gulp-rename'),
     sass         = require('gulp-sass'),
-    scsslint     = require('gulp-scsslint'),
+    scsslint     = require('gulp-scss-lint'),
     uglify       = require('gulp-uglify');
 
 // Paths
@@ -122,10 +122,12 @@ gulp.task('jshint', function() {
 // Sass lint
 // ----------
 
-gulp.task('scsslint', function() {
+gulp.task('scss-lint', function() {
   return gulp.src(styles)
-    .pipe(scsslint('assets/src/styles/.scss-lint.yml'))
-    .pipe(scsslint.reporter());
+    .pipe(scsslint({
+      'config': '.scss-lint.yml',
+      'maxBuffer': 5000000
+    }));
 });
 
 // Styles

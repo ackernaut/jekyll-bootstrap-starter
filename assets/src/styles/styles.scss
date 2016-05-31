@@ -10,7 +10,7 @@
 @import
   'variables',
   'mixins/background-cover',
-  'mixins/breakpoints',
+  'mixins/media-query',
   'mixins/overflow-touch',
   'mixins/position'
 ;
@@ -25,6 +25,7 @@
 // Font Awesome
 // -------------
 
+$fa-font-path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts';
 @import 'font-awesome';
 
 // Patterns

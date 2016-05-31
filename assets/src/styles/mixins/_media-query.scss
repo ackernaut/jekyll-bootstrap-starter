@@ -1,17 +1,17 @@
 
-// File:    _breakpoints.scss
+// File:    _media-queries.scss
 // Purpose: Useful @media query shorthand
 
 /////////////
 // Arguments
 /////////////
 
-// 1. Default:  @include bp(value|variable) { // Min-width styles }
-// 2. Optional: @include bp($max-width: value|variable) { // Max-width styles }
-// 3. Optional: @include bp($min-width: value|variable, $max-width: value|variable) { // Scoped min- to -max-width styles }
-// 4. Optional: @include bp($mq: string|variable) { // Advanced media query styles, including height-based queries }
+// 1. Default:  @include mq(value|variable) { // Min-width styles }
+// 2. Optional: @include mq($max-width: value|variable) { // Max-width styles }
+// 3. Optional: @include mq($min-width: value|variable, $max-width: value|variable) { // Scoped min- to -max-width styles }
+// 4. Optional: @include mq($mq: string|variable) { // Advanced media query styles, including height-based queries }
 
-@mixin bp($min-width: false, $max-width: false, $mq: false, $media-type: 'screen') {
+@mixin mq($min-width: false, $max-width: false, $mq: false, $media-type: 'screen') {
   @if $min-width {
     @if $max-width {
       // Has both min- and max-widths
@@ -35,6 +35,7 @@
     // Note: This may not be shorter in single instances, but can make use of shared variables.
     //       Also, consistent usage can be updated globally when improving the mixin.
     $media-query: unquote($mq);
+
     @media #{$media-query} {
       @content;
     }
