@@ -24,3 +24,7 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 ### Changed
 - Updated packages
 - Cleaned up boilerplate Sass partials
+
+## [0.2.2] - 2016-07-08
+### Changed
+- Updated latest FA font files

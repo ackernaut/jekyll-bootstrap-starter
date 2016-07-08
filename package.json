@@ -1,6 +1,6 @@
 {
   "name": "jekyll-bootstrap-starter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A clean starter for Jekyll using Bootstrap",
   "main": "index.js",
   "scripts": {
