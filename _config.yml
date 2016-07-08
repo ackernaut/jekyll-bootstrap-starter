@@ -2,7 +2,7 @@
 # Site settings
 title: 'Jekyll Boostrap Starter'
 email: ackernaut@gmail.com
-description: 'A minimal, clean starting point using Jeykll and Bootstrap'
+description: 'A clean starter for Jekyll using Bootstrap'
 baseurl:          /jekyll-bootstrap-starter
 url:              http://ackernaut.github.io
 name:             'Jekyll Boostrap Starter'

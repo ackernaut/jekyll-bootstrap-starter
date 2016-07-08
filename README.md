@@ -1,5 +1,5 @@
 # jekyll-bootstrap-starter
-A minimal, clean starting point using Jeykll and Bootstrap
+A clean starter for Jekyll using Bootstrap
 
 ## Local development
 * Install:

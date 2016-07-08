@@ -1,26 +1,27 @@
 
 // styles.scss
-// scss-lint:disable Indentation, TrailingSemicolon
 
 @charset 'utf-8';
 
-// Variables and mixins
-// ---------------------
+// Variables
+// ----------
 
-@import
-  'variables',
-  'mixins/background-cover',
-  'mixins/media-query',
-  'mixins/overflow-touch',
-  'mixins/position'
-;
+@import 'variables/brand';
+
+// Mixins
+// -------
+
+@import 'mixins/background-cover';
+@import 'mixins/font-smoothing';
+@import 'mixins/media-query';
+@import 'mixins/overflow-touch';
+@import 'mixins/position';
 
 // Bootstrap
 // ----------
-// Note: See custom SCSS '_variables' for $[var] overrides.
 
+@import 'bootstrap-variables';
 @import 'bootstrap-import';
-// @import 'bootstrap-overrides';
 
 // Font Awesome
 // -------------
@@ -31,47 +32,10 @@ $fa-font-path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts';
 // Patterns
 // ---------
 
-// @import
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name',
-//   'patterns/name'
-// ;
+@import 'patterns/type-custom';
+
 
 // Components
 // -----------
 
-// @import
-//   'components/name',
-//   'components/name',
-//   'components/name',
-//   'components/name',
-//   'components/name',
-//   'components/name'
-// ;
-
-// Sections
-// ---------
-
-// @import
-//   'sections/name',
-//   'sections/name',
-//   'sections/name',
-//   'sections/name',
-//   'sections/name',
-//   'sections/name'
-// ;
-
-// Views
-// ------
-
-// @import
-//   'views/name',
-//   'views/name',
-//   'views/name',
-//   'views/name',
-//   'views/name',
-//   'views/name'
-// ;
+// @import 'components/components';

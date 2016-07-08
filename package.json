@@ -1,6 +1,6 @@
 {
   "name": "jekyll-bootstrap-starter",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A clean starter for Jekyll using Bootstrap",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,8 @@
   "homepage": "https://github.com/ackernaut/jekyll-bootstrap-starter#readme",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
-    "browser-sync": "^2.12.10",
-    "del": "^2.2.0",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -33,9 +33,10 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
+    "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-uglify": "^1.5.3",
-    "jquery": "^2.2.4"
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^2.2.4",
+    "jshint": "^2.9.2"
   }
 }

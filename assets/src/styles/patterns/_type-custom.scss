@@ -1,0 +1,13 @@
+
+// _type-custom.scss
+
+html,
+body {
+  @include font-smoothing;
+  font-size: 16px;
+}
+
+address {
+  margin: 0;
+  padding: 0;
+}
