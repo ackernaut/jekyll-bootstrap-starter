@@ -28,3 +28,7 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 ## [0.2.2] - 2016-07-08
 ### Changed
 - Updated latest FA font files
+
+## [0.2.3] - 2016-07-22
+### Added
+- Add min-width version of mixin for hi-res media queries
