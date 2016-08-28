@@ -32,3 +32,7 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 ## [0.2.3] - 2016-07-22
 ### Added
 - Add min-width version of mixin for hi-res media queries
+
+## [0.2.4] - 2016-08-27
+### Changed
+- Patch dependency updates and clean-up

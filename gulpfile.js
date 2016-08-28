@@ -76,6 +76,10 @@ gulp.task('clean', function (cb) {
 // ----------------
 
 gulp.task('html', function() {
+    del([
+      './_site/assets/dist/html',
+      './assets/dist/html'
+    ]);
     gulp.src('./_site/**/*.html')
     .pipe(gulp.dest('./assets/dist/html'));
 });
