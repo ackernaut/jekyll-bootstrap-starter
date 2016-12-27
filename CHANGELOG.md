@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [0.3.2] - 2016-12-27
+### Changed
+- Doh! Use correct version of FA from CDN.
+
 ## [0.3.1] - 2016-12-27
 ### Changed
 - Updated Font Awesome font files
