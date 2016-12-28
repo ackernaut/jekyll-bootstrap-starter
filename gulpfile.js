@@ -165,5 +165,5 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   gulp.watch(scripts, ['scripts']);
   gulp.watch(styles, ['styles']);
-  gulp.watch(['**/*.html'], ['jekyll-rebuild']);
+  gulp.watch(['**/*.html', '!_site/**/*.*'], ['jekyll-rebuild']);
 });

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [0.3.4] - 2016-12-28
+### Changed
+- Ignores generated site files when using gulp watch to build Jekyll.
+
 ## [0.3.3] - 2016-12-28
 ### Changed
 - Doh! Updated typo for “Boostrap”.
