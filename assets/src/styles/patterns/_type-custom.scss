@@ -4,7 +4,7 @@
 html,
 body {
   @include font-smoothing;
-  font-size: 16px;
+  font-size: $font-size-base;
 }
 
 address {

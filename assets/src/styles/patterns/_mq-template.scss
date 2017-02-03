@@ -22,10 +22,6 @@
   // Define
 }
 
-@include mq($screen-xl-min) {
-  // Define
-}
-
 // Max-width
 // ----------
 
@@ -41,10 +37,6 @@
   // Define
 }
 
-@include mq($max-width: $screen-lg-max) {
-  // Define
-}
-
 // Min- and max-width
 // -------------------
 
@@ -57,10 +49,6 @@
 }
 
 @include mq($min-width: $screen-md-min, $max-width: $screen-md-max) {
-  // Define
-}
-
-@include mq($min-width: $screen-lg-min, $max-width: $screen-lg-max) {
   // Define
 }
 

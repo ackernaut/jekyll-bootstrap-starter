@@ -6,6 +6,7 @@
 // Variables
 // ----------
 
+@import 'variables/base';
 @import 'variables/brand';
 
 // Mixins
@@ -21,8 +22,8 @@
 // Bootstrap
 // ----------
 
-@import 'bootstrap-variables';
-@import 'bootstrap-import';
+@import 'bootstrap/bootstrap-variables';
+@import 'bootstrap/bootstrap-import';
 
 // Font Awesome
 // -------------
@@ -39,4 +40,4 @@ $fa-font-path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts';
 // Components
 // -----------
 
-// @import 'components/components';
+@import 'components/components';
