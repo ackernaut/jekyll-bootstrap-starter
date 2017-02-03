@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [0.4.0] - 2017-02-03
+### Changed
+- Yanked mixins, using package from Faceta
+
 ## [0.3.4] - 2016-12-28
 ### Changed
 - Ignores generated site files when using gulp watch to build Jekyll.

@@ -11,12 +11,12 @@
 // Mixins
 // -------
 
-@import 'mixins/background-cover';
-@import 'mixins/font-smoothing';
-@import 'mixins/media-query';
-@import 'mixins/mq-high-res';
-@import 'mixins/overflow-touch';
-@import 'mixins/position';
+@import 'faceta-sass-mixins/src/background-cover';
+@import 'faceta-sass-mixins/src/font-smoothing';
+@import 'faceta-sass-mixins/src/media-query';
+@import 'faceta-sass-mixins/src/mq-high-res';
+@import 'faceta-sass-mixins/src/overflow-touch';
+@import 'faceta-sass-mixins/src/position';
 
 // Bootstrap
 // ----------
