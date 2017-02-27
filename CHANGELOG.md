@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [1.0.0] - 2017-02-27
+### Changed
+- Updated packages, v1.0.0 is the last release for Bootstrap 3
+
 ## [0.4.1] - 2017-02-03
 ### Changed
 - Organized partials and default vars

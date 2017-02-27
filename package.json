@@ -23,9 +23,9 @@
   "homepage": "https://github.com/ackernaut/jekyll-bootstrap-starter#readme",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "browser-sync": "^2.18.7",
+    "browser-sync": "^2.18.8",
     "del": "^2.2.2",
-    "faceta-sass-mixins": "0.0.0",
+    "faceta-sass-mixins": "0.1.0",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
