@@ -4,17 +4,25 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.0.0] - 2017-02-27
+### Changed
+- Now using Bootstrap 4.0.0-alpha.6.
+
+## [1.0.1] - 2017-02-27
+### Changed
+- Patch for package version.
+
 ## [1.0.0] - 2017-02-27
 ### Changed
-- Updated packages, v1.0.0 is the last release for Bootstrap 3
+- Updated packages, v1.0.0 is the last release for Bootstrap 3.
 
 ## [0.4.1] - 2017-02-03
 ### Changed
-- Organized partials and default vars
+- Organized partials and default vars.
 
 ## [0.4.0] - 2017-02-03
 ### Changed
-- Yanked mixins, using package from Faceta
+- Yanked mixins, using package from Faceta.
 
 ## [0.3.4] - 2016-12-28
 ### Changed
@@ -30,40 +38,40 @@ This document is based on recommendations by [Keep a CHANGELOG](http://keepachan
 
 ## [0.3.1] - 2016-12-27
 ### Changed
-- Updated Font Awesome font files
+- Updated Font Awesome font files.
 
 ## [0.3.0] - 2016-12-27
 ### Changed
-- Updated packages
+- Updated packages.
 
 ## [0.2.4] - 2016-08-27
 ### Changed
-- Patch dependency updates and clean-up
+- Patch dependency updates and clean-up.
 
 ## [0.2.3] - 2016-07-22
 ### Added
-- Add min-width version of mixin for hi-res media queries
+- Add min-width version of mix-in for hi-res media queries.
 
 ## [0.2.2] - 2016-07-08
 ### Changed
-- Updated latest FA font files
+- Updated latest FA font files.
 
 ## [0.2.1] - 2016-07-08
 ### Changed
 - Updated packages
-- Cleaned up boilerplate Sass partials
+- Cleaned up boilerplate Sass partials.
 
 ## [0.2.0] - 2016-05-31
 ### Changed
-- Updated packages, mixins, etc.
+- Updated packages, mix-ins, etc.
 
 ## [0.1.1] - 2016-02-24
 ### Changed
-- Updated gulpfile
+- Updated gulpfile.
 
 ## [0.1.0] - 2016-02-01
 ### Added
-- Added Browsersync
+- Added Browsersync.
 
 ## [0.0.0] - 2015-11-10
 ### Added
