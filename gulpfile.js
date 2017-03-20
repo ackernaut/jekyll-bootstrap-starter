@@ -24,7 +24,7 @@ var css     = 'assets/dist/css',
     nodeDir = 'node_modules/',
     scripts = [
               nodeDir + 'jquery/dist/jquery.js',
-              nodeDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+              nodeDir + 'bootstrap/dist/js/bootstrap.js',
               'assets/src/libs/modernizr.js',
               'assets/src/scripts/**/*.js'
             ],
@@ -142,7 +142,7 @@ gulp.task('styles', function() {
     .pipe(sass({
       includePaths: [
         'node_modules',
-        'node_modules/bootstrap-sass/assets/stylesheets',
+        'node_modules/bootstrap/scss',
         'node_modules/font-awesome/scss'
       ],
       outputStyle: 'expanded',

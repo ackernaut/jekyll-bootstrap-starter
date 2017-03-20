@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ackernaut/jekyll-bootstrap-starter#readme",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.6",
     "browser-sync": "^2.18.8",
     "del": "^2.2.2",
     "faceta-sass-mixins": "0.1.0",
@@ -36,8 +36,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-uglify": "^2.0.1",
-    "jquery": "^3.1.1",
+    "gulp-uglify": "^2.1.1",
+    "jquery": "^3.2.0",
     "jshint": "^2.9.4"
   }
 }
