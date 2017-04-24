@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This document is based on recommendations by [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## [2.0.3] - 2017-04-24
+### Changed
+- Bumped deps at patch versions.
+
 ## [2.0.2] - 2017-03-20
 ### Changed
 - Renamed and updated the breakpoint template.

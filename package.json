@@ -1,6 +1,6 @@
 {
   "name": "jekyll-bootstrap-starter",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Jekyll Bootstrap Starter",
   "main": "index.js",
   "scripts": {
@@ -36,8 +36,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-uglify": "^2.1.1",
-    "jquery": "^3.2.0",
+    "gulp-uglify": "^2.1.2",
+    "jquery": "^3.2.1",
     "jshint": "^2.9.4"
   }
 }
