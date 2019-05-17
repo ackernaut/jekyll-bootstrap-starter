@@ -22,14 +22,8 @@ var browserSync  = require('browser-sync'),
 var css     = 'assets/dist/css',
     js      = 'assets/dist/js',
     nodeDir = 'node_modules/',
-    scripts = [
-              nodeDir + 'jquery/dist/jquery.js',
-              nodeDir + 'bootstrap/dist/js/bootstrap.js',
-              'assets/src/libs/modernizr.js',
-              'assets/src/scripts/**/*.js'
-            ],
-    styles  = 'assets/src/styles/**/*.scss',
-    fonts   = [nodeDir + 'font-awesome/fonts/**/*.{eot,svg,ttf,woff,woff2}'];
+    scripts = ['assets/src/scripts/ui.js'],
+    styles  = 'assets/src/styles/**/*.scss';
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -75,21 +69,20 @@ gulp.task('clean', function (cb) {
 // Copy HTML files
 // ----------------
 
-gulp.task('html', function() {
-    del([
-      './_site/assets/dist/html',
-      './assets/dist/html'
-    ]);
+gulp.task('html', function(cb) {
+    var files = [
+      './_site/assets/dist/html/**',
+      './_site/assets/dist/CHANGELOG/**',
+      './assets/dist/html/**',
+      '!./assets/dist/html'
+    ];
+    del(files).then(function(paths) {
+      console.log('Deleted old files and folders:\n', paths.join('\n'));
+      console.log('-------------------------------------------');
+      console.log('Check out compiled HTML in assets/dist/html');
+    });
     gulp.src('./_site/**/*.html')
     .pipe(gulp.dest('./assets/dist/html'));
-});
-
-// Copy font files
-// ----------------
-
-gulp.task('fonts', function() {
-    gulp.src(fonts)
-    .pipe(gulp.dest('./assets/dist/fonts'));
 });
 
 // Default
@@ -102,7 +95,6 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task('scripts', function() {
   return gulp.src(scripts)
-    // .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('scripts.js', {
       newLine: ';'
@@ -142,8 +134,7 @@ gulp.task('styles', function() {
     .pipe(sass({
       includePaths: [
         'node_modules',
-        'node_modules/bootstrap/scss',
-        'node_modules/font-awesome/scss'
+        'node_modules/bootstrap/scss'
       ],
       outputStyle: 'expanded',
       onError: browserSync.notify

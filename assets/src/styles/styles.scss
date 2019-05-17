@@ -2,42 +2,4 @@
 // styles.scss
 
 @charset 'utf-8';
-
-// Variables
-// ----------
-
-@import 'variables/base';
-@import 'variables/brand';
-
-// Mixins
-// -------
-
-@import 'faceta-sass-mixins/src/background-cover';
-@import 'faceta-sass-mixins/src/font-smoothing';
-@import 'faceta-sass-mixins/src/media-query';
-@import 'faceta-sass-mixins/src/mq-high-res';
-@import 'faceta-sass-mixins/src/overflow-touch';
-@import 'faceta-sass-mixins/src/position';
-
-// Bootstrap
-// ----------
-
-@import 'bootstrap/bootstrap-variables';
 @import 'bootstrap/bootstrap-import';
-
-// Font Awesome
-// -------------
-
-$fa-font-path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts';
-@import 'font-awesome';
-
-// Patterns
-// ---------
-
-@import 'patterns/type-custom';
-
-
-// Components
-// -----------
-
-@import 'components/components';
